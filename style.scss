@@ -1,0 +1,19 @@
+
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  color:blue;
+  text-align: center;
+}
+  %message {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+    color:blue;
+    text-align: center;
+  }
+# 1 {
+  @extend %message;
+
+}
