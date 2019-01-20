@@ -1,0 +1,20 @@
+tr
+{
+    height :60px;
+}
+td,th,thead
+{
+    color : rgb(150,45,45,0.5);
+    font-size:25pt;
+    font-family: fantasy;
+    text-align:center;
+    width:200px;
+    border: 3px solid darkgrey;
+}
+h1
+{
+  font-size: 150px;
+  color:purple;
+  text-align: center;
+  padding: 50px;
+}
