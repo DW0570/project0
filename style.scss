@@ -1,19 +1,117 @@
 
-h1 {
-  font-family: sans-serif;
-  font-size: 50px;
-  color:blue;
-  text-align: center;
-}
-  %message {
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding:10px;
-    color:blue;
-    text-align: center;
-  }
-# 1 {
-  @extend %message;
+$padding1:padding:10px 0px 10px 20px;
+$padding2:padding:10px 10px 10px 10px;
+$padding3:padding:10px 10px 10px 0px;
+$color:white;
 
+.div1{
+
+  h2{
+    text-align: center;
+    color:$color;
+  }
 }
+
+.p1
+{
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-bottom: 100px;
+}
+
+.p2
+{
+  text-align: center;
+  color:$color;
+}
+
+  %list_0 {
+    li{
+      color: white !important;
+      text-decoration:none;
+    }
+    font-size: 60px;
+    color:blue;
+    height:  400px;
+    width: 100px;
+  }
+
+  .list_1{
+    @extend %list_0;
+      text-align: left;
+      padding-left: 50px;
+    }
+
+  .list_2{
+    @extend %list_0;
+      text-align: right;
+      padding-left: 960px;
+    }
+
+  %image_0{
+    height: 300px;
+    width: 400px;
+  }
+
+  .image_1 {
+    @extend %image_0;
+    padding:$padding1;
+  }
+
+  .image_2 {
+    @extend %image_0;
+    padding:$padding3;
+  }
+
+  .image_3{
+    padding:$padding2;
+    height: 240px;
+    width: 200px;
+  }
+
+  %h_0{
+    font-size: 30px;
+    font-family: fantasy;
+    text-decoration:none;
+    width:100px;
+    color: red;
+  }
+
+  .h_1 {
+    @extend %h_0;
+    padding:$padding1;
+  }
+
+  .h_2 {
+    @extend %h_0;
+    padding:$padding2;
+  }
+
+  .h_3 {
+    @extend %h_0;
+    padding:$padding3;
+  }
+
+  %butt_0{
+    width: 30px;
+    height: 20px;
+    color: $color;
+    background-color: blue;
+    border-radius: 10px;
+  }
+
+  .butt_1 {
+    @extend %butt_0;
+    padding:$padding1;
+  }
+
+  .butt_2 {
+    @extend %butt_0;
+    padding:$padding2;
+  }
+
+  .butt_3 {
+    @extend %butt_0;
+    padding:$padding3;
+  }
