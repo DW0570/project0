@@ -5,13 +5,24 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        <style>
+        @media (min-width:500px){
+          h1::before{
+            content: "Welcome to my Webpage!"
+          }
+        }
+        @media (max-width:499px){
+          h1::before{
+            content: "Welcome!"
+          }
+        }
+        </style>
     </head>
-    <body>
-      <div class="p-3 mb-2 bg-info  text-white">
-
-    <h1 class="h-1"> Welcome To My Webpage!12345</h1>
-  <img class="card-img" src="image1.jpg" height="auto" width="50"alt="Card image">
+    <body class="backg">
+        <h1 class="h_1"></h1>
+        <p class="p1">The website is about dogs and cats. They are lovely and funny!</p>
+        <p class="p2"><a class="btn btn-primary btn-lg" role="button" href="detail.html">Learn more</a></p>
+  <!--<img class="card-img" src="image1.jpg" height="auto" width="50"alt="Card image">-->
 
 
     <!--<body style="background-align:image1.jpg;">-->
@@ -104,6 +115,6 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
     </body>
 </html>
