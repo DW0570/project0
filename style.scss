@@ -1,14 +1,35 @@
 
-$padding1:10px 0px 10px 20px;
-$padding2:10px 10px 10px 10px;
-$padding3:10px 10px 10px 0px;
+$padding1:50px 0px 10px 20px;
+$padding2:50px 10px 10px 10px;
+$padding3:50px 10px 10px 0px;
 $color:white;
+$color1:#fbcdef;
+$width:500px;
+$height:400px;
 
 .div1{
+  background-image: url('back.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  h1{
+    font-family: fantasy;
+    font-size: 70px;
+    color:pink;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom: 5px;
+
+  }
 
   h2{
     text-align: center;
     color:$color;
+    font-size: 160px;
+    padding-bottom: 5px;
   }
 }
 
@@ -27,7 +48,7 @@ $color:white;
 }
 
   %list_0 {
-    li{
+    li>a{
       color: white !important;
       text-decoration:none;
     }
@@ -40,18 +61,18 @@ $color:white;
   .list_1{
     @extend %list_0;
       text-align: left;
-      padding-left: 50px;
+      padding-left: 110px;
     }
 
   .list_2{
     @extend %list_0;
       text-align: right;
-      padding-left: 960px;
+      padding-left: 1200px;
     }
 
   %image_0{
-    height: 300px;
-    width: 400px;
+    height: $height+50px;
+    width: $width;
   }
 
   .image_1 {
@@ -59,44 +80,73 @@ $color:white;
     padding:$padding1;
   }
 
-  .image_2 {
+  .image_3 {
     @extend %image_0;
     padding:$padding3;
   }
 
-  .image_3{
+  .image_2{
     padding:$padding2;
-    height: 240px;
-    width: 200px;
+    height: 300px;
+    width: 260px;
+  }
+
+  .div_2{
+    padding-top: 100px;
+    p{
+      font-size: 50px;
+      color:$color;
+      padding-top: 0px;
+    }
   }
 
   %h_0{
     font-size: 30px;
-    font-family: fantasy;
+    font-family: sans-serif;
     text-decoration:none;
-    width:100px;
-    color: red;
+    color: black;
+    padding-top: 100px;
+    background-color: $color1;
+    border-radius: 40px;
   }
 
   .h_1 {
     @extend %h_0;
     padding:$padding1;
+    width:$width;
   }
 
   .h_2 {
     @extend %h_0;
     padding:$padding2;
+    width:$width;
   }
 
   .h_3 {
     @extend %h_0;
     padding:$padding3;
+    width:$width;
   }
 
-  %butt_0{
-    width: 30px;
-    height: 20px;
-    color: $color;
+  .div_3{
+    p:hover{
+      color:red;
+    }
+    p{
+      font-size: 40px;
+      font-family: sans-serif;
+      text-decoration:none;
+      color: purple;
+      padding-top: 100px;
+      padding-left: 100px;
+      padding-bottom: 100px;
+      height: 50px;
+      width: 900px;
+    }
+  }
+  /*%butt_0{
+    width: 100px;
+    height: 40px;
     background-color: blue;
     border-radius: 10px;
   }
@@ -114,4 +164,4 @@ $color:white;
   .butt_3 {
     @extend %butt_0;
     padding:$padding3;
-  }
+  }*/
