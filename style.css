@@ -17,11 +17,13 @@
   color: pink;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 .div1 h2 {
   text-align: center;
   color: white;
+  font-size: 160px;
+  padding-bottom: 5px;
 }
 
 .p1 {
@@ -49,63 +51,88 @@
 
 .list_1 {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 110px;
 }
 
 .list_2 {
   text-align: right;
-  padding-left: 960px;
+  padding-left: 1200px;
 }
 
 .image_3, .image_1 {
-  height: 350px;
-  width: 400px;
+  height: 450px;
+  width: 500px;
 }
 
 .image_1 {
-  padding: 10px 0px 10px 20px;
+  padding: 50px 0px 10px 20px;
 }
 
 .image_3 {
-  padding: 10px 10px 10px 0px;
+  padding: 50px 10px 10px 0px;
 }
 
 .image_2 {
-  padding: 10px 10px 10px 10px;
-  height: 240px;
-  width: 200px;
+  padding: 50px 10px 10px 10px;
+  height: 300px;
+  width: 260px;
+}
+
+.h_00 {
+  padding-top: 100px;
+  /*button{
+    height: 50px;
+    border-radius: 20px;
+    color: yellow;
+  }*/
+}
+.h_00 p {
+  font-size: 50px;
+  color: white;
+  padding-top: 0px;
 }
 
 .h_3, .h_2, .h_1 {
   font-size: 30px;
-  font-family: fantasy;
+  font-family: sans-serif;
   text-decoration: none;
-  color: red;
-}
-
-#h_00 {
-  font-size: 30px;
-  font-family: fantasy;
-  text-decoration: none;
-  color: red;
+  color: black;
+  padding-top: 100px;
+  background-color: #fbcdef;
+  border-radius: 40px;
 }
 
 .h_1 {
-  padding: 10px 0px 10px 20px;
-  width: 400px;
+  padding: 50px 0px 10px 20px;
+  width: 500px;
 }
 
 .h_2 {
-  padding: 10px 10px 10px 10px;
-  width: 400px;
+  padding: 50px 10px 10px 10px;
+  width: 500px;
 }
 
 .h_3 {
-  padding: 10px 10px 10px 0px;
-  width: 400px;
+  padding: 50px 10px 10px 0px;
+  width: 500px;
 }
 
-.butt_3, .butt_2, .butt_1 {
+.div_3 p:hover {
+  color: red;
+}
+.div_3 p {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: purple;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  height: 50px;
+  width: 900px;
+}
+
+/*%butt_0{
   width: 100px;
   height: 40px;
   background-color: blue;
@@ -113,15 +140,18 @@
 }
 
 .butt_1 {
-  padding: 10px 0px 10px 20px;
+  @extend %butt_0;
+  padding:$padding1;
 }
 
 .butt_2 {
-  padding: 10px 10px 10px 10px;
+  @extend %butt_0;
+  padding:$padding2;
 }
 
 .butt_3 {
-  padding: 10px 10px 10px 0px;
-}
+  @extend %butt_0;
+  padding:$padding3;
+}*/
 
 /*# sourceMappingURL=style.css.map */
