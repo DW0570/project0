@@ -5,6 +5,7 @@ $padding3:50px 10px 10px 0px;
 $color:white;
 $color1:#fbcdef;
 $color2:pink;
+$color3:purple;
 $width:400px;
 $height:300px;
 
@@ -12,6 +13,16 @@ $height:300px;
 
 .backg{
   background-color: $color1;
+  @media (min-width:500px){
+    h1::before{
+      content: "Welcome to my Webpage!"
+    }
+  }
+  @media (max-width:499px){
+    h1::before{
+      content: "Welcome!"
+    }
+  }
 }
 
 .h_01{
@@ -42,14 +53,12 @@ $height:300px;
 }
 
 .div1{
-  //margin: 20px;
   background-image: url('back.jpg');
   background-color: #cccccc; /* Used if the image is unavailable */
   height: auto; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  //position: fixed;
 
   h2{
     text-align: center;
@@ -129,37 +138,28 @@ $height:300px;
   }
 
   .div3{
-    //background-color: purple;
-    //width: 100%;
-    //height: 10px;
-    //padding-top: 800px;
-    //padding-bottom: 100px;
-    p:hover{
-      color:black;
-    }
+    margin-top: 200px;
+
     p{
       font-size: 20px;
       font-family: sans-serif;
       text-align: center;
       text-decoration:none;
-      color: $color;
-      margin-top: 300px;
       padding-bottom: 100px;
-      padding-top: 70px;
-      background-color: purple;
-      background-size: auto;
+      padding-top: 100px;
       width: 100%;
-      //width: 200px;
-      //height: 40px;
+      height: 1px;
     }
+    p>a{
+      color: $color3 !important;
+      text-decoration: none !important;
+    }
+
   }
 
   #tal{
     div{
       padding: 20px;
       border: 2px solid black;
-    }
-    table > th{
-      border: 1px solid red;
     }
   }
