@@ -1,3 +1,12 @@
+#topp {
+  background-color: orange;
+  background-size: cover;
+  padding-left: 100px;
+}
+#topp div {
+  padding: 20px;
+}
+
 .backg {
   background-color: #fbcdef;
 }
@@ -30,9 +39,12 @@
   color: dark;
 }
 
-.p2 {
+#p2 {
   text-align: center;
-  color: white;
+  font-size: 35px;
+  font-family: sans-serif;
+  text-align: center;
+  color: green;
 }
 
 .div1 {
@@ -116,27 +128,33 @@
   padding: 50px 10px 10px 0px;
 }
 
-.div3 {
+.div4, .div3 {
   margin-top: 200px;
 }
-.div3 p {
+.div4 p, .div3 p {
   font-size: 20px;
   font-family: sans-serif;
   text-align: center;
   text-decoration: none;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   width: 100%;
   height: 1px;
 }
-.div3 p > a {
+.div4 p > a, .div3 p > a {
   color: purple !important;
   text-decoration: none !important;
+}
+
+.div4 {
+  margin-top: 0px;
+  padding-bottom: 10px;
 }
 
 #tal div {
   padding: 20px;
   border: 2px solid black;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
